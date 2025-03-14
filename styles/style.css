@@ -34,6 +34,7 @@ section {
 .heading {
   font-size: 4.5rem;
   text-align: center;
+  padding: 3rem 0;
 }
 
 .heading-description {
@@ -404,4 +405,36 @@ form input:focus,
 form textarea:focus{
   outline:none;
   box-shadow: 0 0.2rem 0.2rem -0.1rem var(--main-color);
+}
+
+.footer{
+  background-color: var(--second-bg-color);
+  padding: 40px 0;
+  text-align: center;
+  border-top: 0.2rem solid var(--main-color);
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.arrow a{
+  display: inline-flex;
+  color: var(--main-color);
+  font-size: 5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: 0.3s ease;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+.arrow a:hover{
+  box-shadow: 0 0 2.5rem var(--main-color);
+  transform: scale(1.1) translateY(-1rem);
+}
+
+.footer p{
+  color: var(--text-color);
 }
