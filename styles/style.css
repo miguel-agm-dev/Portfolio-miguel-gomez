@@ -282,6 +282,7 @@ span {
 
 .portfolio-item{
   width: calc(90%/3);
+  height: 65rem;
   background-color: var(--bg-color);
   border-radius: 1rem;
   border: .1rem solid transparent;
