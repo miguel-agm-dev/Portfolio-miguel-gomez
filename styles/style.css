@@ -402,7 +402,7 @@ span {
 }
 
 .portfolio-item{
-  width: calc(90%/3);
+  flex: 1 1 30rem;
   height: 65rem;
   background-color: var(--bg-color);
   border-radius: 1rem;
@@ -479,6 +479,12 @@ span {
   height: 58rem;
 }
 
+@media (max-width: 992px){
+  .img-contact{
+    display: none;
+  }
+}
+
 .contact form{
   width: 50%;
   margin: 1rem auto;
@@ -494,6 +500,18 @@ span {
 .contact form:hover{
   transform: scale(1.03);
   cursor: pointer;
+}
+
+@media (max-width:1200px){
+  .contact form{
+    width: 50%;
+  }
+}
+
+@media (max-width:992px){
+  .contact-content form{
+    width: 100%;
+  }
 }
 
 form input,
